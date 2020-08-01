@@ -1,0 +1,85 @@
+@import '../app.component.scss';
+
+.portfolio {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    width: 90%;
+    margin: auto;
+
+    @media (max-width:1024px) {
+        width: 95%;
+        margin: auto;
+    }
+    
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        padding: 5rem 0;
+
+    
+    }
+
+    &__img {
+        flex: 1 1 40rem;
+        height: 42rem;
+        width: 40rem;
+        // // box-shadow: 4px 4px 15px $color-citylight;
+        // border: 1px solid $color-citylight;
+
+        @media (max-width: 700px) {
+            height: 37rem;
+            width: 35rem;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__wrapper {
+        flex: 2 1 40rem;
+        padding: 4rem 6rem;
+
+
+        @media (max-width: 1024px) {
+            padding: 4rem 4rem;
+        }
+    }
+
+    &__title {
+        color: $color-grey;
+        font-size: $heading-secondary;
+        margin-bottom: 2rem;
+
+        @media (max-width: 1024px) {
+            font-size: size(secondary-mobile);
+        }
+    }
+
+    &__details {
+        margin-bottom: 6rem;
+        font-size: $text;
+    }
+
+    &--btn {
+        font-size: $text;
+        padding: 2rem 8rem;
+        font-family: $font-Montserrat;
+        color: $color-primary;
+        font-weight: bold;
+        border: 3px solid $color-primary;
+        cursor: pointer;
+        text-decoration: none;
+
+
+        @media (max-width: 700px) {
+            padding: 2rem 5rem;
+            border: 2px solid $color-primary;
+        }
+        
+    }
+}

@@ -1,0 +1,42 @@
+
+@import '../app.component.scss';
+
+
+
+.topnav {
+    width: 55%;
+    margin: auto;
+    z-index: 10;
+
+    @media (max-width: 700px) {
+        width: 70%;
+    }
+
+    &__item {
+        min-height: 10vh;
+        padding: 2rem 0;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: $heading-tertiary;
+        color: $color-grey;
+        font-weight: 600;
+
+        @media (max-width:700px) {
+            font-size: size(tertiary_mobile);
+        }
+        
+    }
+
+
+}

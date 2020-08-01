@@ -1,0 +1,80 @@
+@import '../app.component.scss';
+
+
+
+.about {
+
+    background: linear-gradient(to right, $color-primary-secondary, $color-primary-light);
+    display: flex;
+    flex-wrap: wrap;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    padding: 6rem 4rem;
+
+
+    @media (max-width: 700px) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+    &__img {
+        flex: 1 1 42rem;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+            object-fit: cover;
+
+        }
+    }
+
+
+    &__details {
+        color: $color-white;
+        font-size: size(tertiary-mobile);
+        flex: 1 1 42rem;
+        line-height: 4rem;
+        padding-left: 3rem;
+        padding-bottom: 5rem;
+
+
+
+        @media (max-width: 700px) {
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+            font-size: size(tertiary-mobile);
+        }
+
+        p {
+            padding-bottom: 4rem;
+
+            @media (max-width: 700px) {
+                padding-bottom: 3rem;
+            }
+
+        }
+
+    }
+
+    &__btn {
+        outline: none;
+        border: 3px solid $color-white;
+        background: transparent;
+        color: $color-white;
+        font-family: $font-Montserrat;
+        padding: 2rem 8rem;
+        cursor: pointer;
+        font-size: $text;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+
+        @media (max-width: 700px) {
+            padding: 2rem 5rem;
+            border: 2px solid $color-white;
+        }
+
+
+    }
+}

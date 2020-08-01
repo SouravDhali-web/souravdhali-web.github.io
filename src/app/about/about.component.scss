@@ -1,0 +1,153 @@
+@import '../app.component.scss';
+
+.myresume {
+    padding: 10rem 0;
+    //
+
+
+    &__heading {
+
+        color: $color-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 0;
+    }
+
+    &__primaryhead {
+        font-size: $heading-tertiary;
+
+        @media (max-width: 700px) {
+            font-size: size(tertiary-mobile);
+        }
+    }
+
+    &__paragraph {
+        padding: 0 3rem;
+        font-size: $text;
+        margin-top: 4rem;
+        word-spacing: 2px;
+        line-height: 1.6;
+
+        span {
+            color: $color-secondary;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 6rem 0;
+
+
+        &--unfilled {
+
+        font-size: $text;
+        padding: 2rem 5rem;
+        font-family: $font-Montserrat;
+        color: $color-primary;
+        font-weight: bold;
+        border: 3px solid $color-primary;
+        border-radius: 1px;
+        outline: none;
+        margin: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+
+
+        @media (max-width: 700px) {
+            border: 2px solid $color-primary;
+            padding: 2rem 4rem;
+        }
+        }
+
+
+        &--filled {
+
+            font-size: $text;
+            padding: 2rem 6rem;
+            font-family: $font-Montserrat;
+            color: $color-white;
+            font-weight: bold;
+            border: 3px solid $color-primary;
+            background-color: $color-primary;
+            text-decoration: none;
+            border-radius: 1px;
+
+            @media (max-width: 700px) {
+                border: 2px solid $color-primary;
+            }
+
+        }
+    }
+
+
+
+
+    &__subheading {
+        text-align: center;
+        margin: 4rem 0rem;
+        font-size: $heading-tertiary;
+        color: $color-grey;
+
+        @media (max-width: 700px) {
+            font-size: size(tertiary-mobile);
+        }
+
+
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 6rem;
+            margin: auto;
+            margin-top: 2rem;
+            background-color:$color-secondary;
+        }
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &--img {
+            height: 5rem;
+            width: 4rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+
+        &--card {
+            display: flex;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        &--heading {
+            font-size: $text;
+            padding-left: 1rem;
+
+
+
+            @media (max-width: 700px) {
+                font-size: size(text-mobile);
+            }
+        }
+    }
+}

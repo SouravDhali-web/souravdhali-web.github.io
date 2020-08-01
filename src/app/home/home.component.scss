@@ -1,0 +1,58 @@
+
+@import '../app.component.scss';
+
+
+.homebanner {
+    min-height: 90vh;
+    width: 90%;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 700px) {
+        min-height: 85vh;
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+    &__heading {
+        font-size: $heading-primary;
+        color: $color-grey;
+
+        @media (max-width: 700px) {
+            font-size: size(primary-mobile);
+        }
+
+        span {
+            color: $color-secondary;
+        }
+    }
+
+    &__btn-green {
+        font-size: $text;
+        padding: 2rem 8rem;
+        font-family: $font-Montserrat;
+        color: $color-primary;
+        font-weight: bold;
+        outline: none;
+        background-color: $color-white;
+        border: 3px solid $color-primary;
+        cursor: pointer;
+        margin-top: 6rem;
+
+
+        @media (max-width: 700px) {
+            padding: 2rem 5rem;
+            border: 2px solid $color-primary;
+        }
+    }
+}
+
+
+

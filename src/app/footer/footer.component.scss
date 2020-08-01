@@ -1,0 +1,61 @@
+@import '../app.component.scss';
+
+
+.bottom__footer {
+    padding: 5rem 0;
+    background-color: $color-grey;
+    color: $color-grey-light;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--arrow {
+        font-size: 2rem;
+    }
+
+    &__social-icon {
+        margin: 6rem 0;
+        font-size: 3rem;
+        
+        
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            
+            
+
+            li {
+                padding: 0 3rem;
+
+                a {
+                    color: $color-grey-light;
+                }
+            }
+        }
+        
+    }
+
+
+
+    &__credit {
+        font-family: $font-Montserrat;
+        font-size: $footer;
+        text-align: center;
+
+
+        &::before {
+            content: "";
+            margin: auto;
+            display: block;
+            height: 1px;
+            width: 50rem;
+            background-color: $color-citylight;
+            margin-bottom: 2rem;
+
+        }
+    }
+}
