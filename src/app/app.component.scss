@@ -1,0 +1,33 @@
+$font-Montserrat: 'Montserrat', sans-serif;
+
+$color-primary: #1ABC9C;
+$color-secondary: #e74c3c;
+$color-grey: #4F4F4F;
+$color-grey-light: #E0E0E0;
+$color-white: #ffff;
+$color-black: #0000;
+$color-citylight: #9c9c9ca9;
+
+$color-primary-secondary: #12CBC4;
+$color-primary-light: #00b894;
+
+$heading-primary: 5rem;
+$heading-secondary: 3.5rem;
+$heading-tertiary: 2.8rem;
+$text-big: 2.3rem;
+$text: 2rem;
+$footer: 1.3rem;
+
+
+// mobile view font variables
+
+$font-sizes: (
+    primary-mobile: 3.5rem,
+    secondary-mobile: 3rem,
+    tertiary-mobile: 2.5rem,
+    text-mobile: 1.8rem
+);
+
+@function size($size) {
+    @return map-get($map: $font-sizes, $key: $size);
+}

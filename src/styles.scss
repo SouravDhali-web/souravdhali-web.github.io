@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+$font-Montserrat: 'Montserrat', sans-serif;
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-Montserrat;
+    font-size: 62.5%;
+
+    //1st breakdown (1200)
+
+    @media (max-width:1200px){
+        font-size: 58%;
+    }
+    //breakdown for ipad pro
+    @media (max-width: 1024px) {
+        font-size: 55%;
+    }
+
+
+    //tablet-beforeMobile(889)
+    @media (max-width: 888px) {
+        font-size: 50%;
+    }
+
+    @media (max-width: 807px) {
+        font-size: 45%;
+    }
+
+    //breakdown for mobileView
+    @media (max-width: 700px) {
+        font-size: 40%;
+    }
+
+}
